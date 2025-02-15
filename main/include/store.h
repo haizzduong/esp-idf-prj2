@@ -5,7 +5,7 @@
 #include "esp_log.h"
 
 #define TAG_STORE       "Store"
-#define FIREBASE_KEY    "?key=AIzaSyBp1UtrpeQDyHEPI_4EOlwG5Qr45cTKbkM"
+#define FIREBASE_KEY    ""
 #define FIREBASE_URL    "https://firestore.googleapis.com/v1/projects/prj2-58979/databases/(default)/documents/users/"
 
 typedef struct
