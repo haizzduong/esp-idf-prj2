@@ -1,0 +1,59 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Espressif\_prj2\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.0.7/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Espressif/_prj2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6760 bytes. 0x8a0 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/src/display.c.obj
+In file included from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/main/include/display.h:11: warning: "CONFIG_SDA_GPIO" redefined
+   11 | #define CONFIG_SDA_GPIO     (21)
+      | 
+In file included from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/assert.h:12,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/sys/reent.h:9,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Espressif/_prj2/main/include/display.h:3,
+                 from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/build/config/sdkconfig.h:236: note: this is the location of the previous definition
+  236 | #define CONFIG_SDA_GPIO 21
+      | 
+In file included from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/main/include/display.h:12: warning: "CONFIG_SCL_GPIO" redefined
+   12 | #define CONFIG_SCL_GPIO     (22)
+      | 
+In file included from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/assert.h:12,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/sys/reent.h:9,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Espressif/_prj2/main/include/display.h:3,
+                 from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/build/config/sdkconfig.h:235: note: this is the location of the previous definition
+  235 | #define CONFIG_SCL_GPIO 22
+      | 
+In file included from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/main/include/display.h:13: warning: "CONFIG_RESET_GPIO" redefined
+   13 | #define CONFIG_RESET_GPIO   (-1)
+      | 
+In file included from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/assert.h:12,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\sys\reent.h:503,
+                 from D:/Espressif/frameworks/esp-idf-v5.0.7/components/newlib/platform_include/sys/reent.h:9,
+                 from d:\espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\xtensa-esp32-elf\sys-include\stdio.h:60,
+                 from D:/Espressif/_prj2/main/include/display.h:3,
+                 from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/_prj2/build/config/sdkconfig.h:237: note: this is the location of the previous definition
+  237 | #define CONFIG_RESET_GPIO 15
+      | 
+In file included from D:/Espressif/_prj2/main/include/display.h:9,
+                 from D:/Espressif/_prj2/main/src/display.c:1:
+D:/Espressif/frameworks/esp-idf-v5.0.7/components/ssd1306/font8x8_basic.h:41:16: warning: 'font8x8_basic_tr' defined but not used [-Wunused-variable]
+   41 | static uint8_t font8x8_basic_tr[128][8] = {
+      |                ^~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable main.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Espressif/_prj2/build/main.bin
+[7/7] cmd.exe /C "cd /D D:\Espressif\_prj2\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.0_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.0.7/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/_prj2/build/partition_table/partition-table.bin D:/Espressif/_prj2/build/main.bin"
+main.bin binary size 0x2bef0 bytes. Smallest app partition is 0x100000 bytes. 0xd4110 bytes (83%) free.

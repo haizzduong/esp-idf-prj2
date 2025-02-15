@@ -1,0 +1,329 @@
+I (192) boart: App versi�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6992
+load:0x40078000,len:15520
+load:0x40080400,len:3864
+entry 0x40080650
+[0;32mI (27) boot: ESP-IDF v5.0.7-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 16:09:58[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (49) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adfch ( 44540) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=0001ae24 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001d140 vaddr=40080000 size=02ed8h ( 11992) load[0m
+[0;32mI (127) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19520h (103712) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00039548 vaddr=40082ed8 size=0a7b0h ( 42928) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x400811ac[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     main[0m
+[0;32mI (232) cpu_start: App version:      1[0m
+[0;32mI (236) cpu_start: Compile time:     Feb 13 2025 16:10:03[0m
+[0;32mI (242) cpu_start: ELF file SHA256:  c1e2373a518d0dfd...[0m
+[0;32mI (248) cpu_start: ESP-IDF:          v5.0.7-dirty[0m
+[0;32mI (254) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (258) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (263) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (268) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (275) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFB30A8 len 0002CF58 (179 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (300) heap_init: At 4008D688 len 00012978 (74 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (333) app_start: Starting scheduler on CPU1[0m
+mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) Display: INTERFACE is i2c[0m
+[0;32mI (343) Display: CONFIG_SDA_GPIO=21[0m
+[0;32mI (353) Display: CONFIG_SCL_GPIO=22[0m
+[0;32mI (353) Display: CONFIG_RST_GPIO=-1[0m
+[0;32mI (353) SSD1306: Legacy i2c driver is used[0m
+[0;32mI (363) Display: Panel is 128x64[0m
+[0;31mE (363) SSD1306: OLED configuration failed. code: 0xFFFFFFFF[0m
+[0;31mE (373) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (383) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (383) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (393) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (393) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (403) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (413) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (413) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (423) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (423) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (433) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (443) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (443) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (453) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (453) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (463) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (463) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (473) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (483) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (483) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (493) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (493) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (503) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (513) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (513) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (523) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (523) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (533) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (543) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (543) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (553) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (553) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (563) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (563) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (573) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (583) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (583) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (593) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (593) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (603) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (613) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (613) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (623) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (623) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (633) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (643) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (643) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (653) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (653) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (663) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (673) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (673) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (683) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (683) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (693) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (693) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (703) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (713) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (713) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (723) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (723) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (733) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (743) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (743) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (753) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (753) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (763) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (773) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (773) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (783) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (783) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (793) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (803) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (803) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (813) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (813) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (823) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (823) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (833) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (843) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (843) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (853) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (853) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (863) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (873) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (873) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (883) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (883) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (893) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (903) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (903) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (913) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (913) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (923) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (933) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (933) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (943) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (943) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (953) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (953) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (963) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (973) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (973) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (983) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (983) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (993) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1003) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1003) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1013) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1013) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1023) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1033) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1033) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1043) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1043) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1053) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1063) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1063) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1073) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1073) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1083) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1093) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1093) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1103) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1103) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1113) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1123) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1123) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1133) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1133) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1143) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1153) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1153) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1163) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1163) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1173) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1183) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1183) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1193) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1193) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1203) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1213) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1213) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1223) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1223) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1233) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1243) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1243) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1253) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1253) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1263) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1273) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1273) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1283) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1283) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1293) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1303) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1303) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1313) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1313) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1323) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1333) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1333) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1343) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1343) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1353) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1363) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1363) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1373) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1373) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1383) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1393) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1393) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1403) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1403) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1413) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1423) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1423) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1433) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1433) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1443) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1453) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1453) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1463) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1463) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1473) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1483) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1483) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1493) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1493) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1503) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1503) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1513) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1523) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1523) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1533) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1533) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1543) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1553) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1553) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1563) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1563) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1573) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1583) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1583) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1593) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1593) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1603) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1613) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1613) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1623) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1623) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1633) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1643) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1643) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1653) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1653) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1663) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1673) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1673) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1683) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1683) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1693) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1703) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1703) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1713) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1713) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1723) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1733) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1733) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1743) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1743) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1753) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1763) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1763) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1773) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1773) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1783) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1793) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1793) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1803) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1803) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1813) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1823) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1823) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1833) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1833) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1843) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1853) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1853) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1863) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1863) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1873) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1883) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1883) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1893) SSD1306: Image command failed. code: 0xFFFFFFFF[0m
+[0;31mE (1893) SSD1306: Contrast command failed. code: 0xFFFFFFFF[0m
+[0;32mI (1903) Project 2: 2[0m
+[0;32mI (3903) Project 2: 1[0m
+[0;32mI (5903) Project 2: 0[0m
+[0;32mI (7903) Project 2: -1[0m
+[0;32mI (9903) Project 2: -2[0m
+[0;32mI (11903) Project 2: -3[0m
